@@ -9,6 +9,10 @@ body {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.width-100 {
+  width: 100%;
+}
+
 main {
   color: white;
   font-family: Workbench, sans-serif;
@@ -18,25 +22,86 @@ main {
   align-items: center;
 }
 
-.width-100 {
-  width: 100%;
-}
-
 footer {
   height: 50vh;
   background-color: black;
   display: grid;
-  grid-template-columns: 3fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-article {
-  grid-row: 1/2;
+.title-one {
   color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   font-family: Josefin Sans, sans-serif;
-  font-size: 35px;
-  padding-top: 120px;
+  font-size: 40px;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
 }
+
+.title-two {
+  color: white;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 40px;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-three {
+  color: white;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 40px;
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph-one {
+  color: white;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 23px;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 35%;
+  margin-bottom: 140px;
+}
+
+.paragraph-two {
+  color: white;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 23px;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 35%;
+  margin-bottom: 140px;
+}
+
+.paragraph-three {
+  color: white;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 23px;
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 35%;
+  margin-bottom: 140px;
+}
+

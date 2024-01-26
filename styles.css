@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background-color: aqua;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+main {
+  color: white;
+  font-family: Workbench, sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+footer {
+  height: 50vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+article {
+  grid-row: 1/2;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 35px;
+  padding-top: 120px;
+}

@@ -3,7 +3,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  background-color: aqua;
   overflow: hidden;
 }
 
@@ -20,6 +19,7 @@ body {
 
 main {
   color: white;
+  background-color: aqua;
   font-family: Workbench, sans-serif;
   font-size: 40px;
   display: flex;
@@ -122,8 +122,15 @@ footer {
 
 
 @media (max-width: 992px) {
+  body {
+    max-height: calc(100vh - 50px);
+    overflow: auto;
+    background-color: black;
+  }
+  
   main {
     font-size: 30px;
+    margin-top: 20px;
   }
 
   .blue-box, .red-box, .green-box {
@@ -140,6 +147,7 @@ footer {
     font-size: 15px;
     width: 60%;
     text-align: center;
+    padding-bottom: 25px;
   }
 }
 
@@ -194,7 +202,7 @@ footer {
     font-size: 15px;
     width: 80%;
     margin-bottom: 0;
-    padding: 0;
+    padding-bottom: 25px;
   }
 
   .blue-box, .red-box, .green-box {
